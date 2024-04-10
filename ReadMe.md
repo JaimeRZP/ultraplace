@@ -13,11 +13,12 @@ One of the leading contributions to the error budgets of cosmological analysis i
 
 The uncertainties in the radial distribution of galaxies is naturally expressed in the form of a statistical process. However, due the finite number of galaxies at a given position, the process is often discretised as a histogram with finite bins and an associated covariance matrix. The number of discrete bins is normally of order 10^2. This large number of parameters makes propagating their impact computationally prohibitive for traditional inference methods. Thus, cosmological analysis have so attempted to summarise the radial distribution in terms of far lower number of parameters (10^1). 
 ## Literature review
+### Papers
 - Analytic marginalization over CMB calibration and beam uncertainty *by Bridle et al* (0112114) - 2001
 - Analytic Methods for Cosmological Likelihoods *by Taylor & Kitchin* (1003.1136) - 2011
 - Self-calibration and robust propagation of photometric redshift distribution uncertainties in weak gravitational lensing *by Stölzner et al* (2012.07707) - 2021
 - Analytical marginalisation over photometric redshift uncertainties in cosmic shear analyses *by Ruiz-Zapatero et al* (2301.11978) - 2023
-## Photo-z Models
+### Photo-z Models
 * **Shifts**: $$p(z + \Delta z)$$
 * **Shifts & widths**: $$p(z_c + w_{z}(z-z_c) + \Delta z)$$
 * **Eigen-functions**: $$p(z) = \sum_i^n \lambda_i \phi_i(z)$$
@@ -25,7 +26,7 @@ The uncertainties in the radial distribution of galaxies is naturally expressed 
 * **Full Histogram**: $$p(z) = \boldsymbol{n}$$
 * **Neuronal Network**: $$p(z) = NN(\boldsymbol{\alpha})$$ 
 
-## Stölzner vs Ruiz-Zapatero
+### Stölzner vs Ruiz-Zapatero
 |                  | Stölzner                                                            | Ruiz-Zapatero                                                                                                                                                           |  
 | ---------------- | ------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------- | 
 | Photo-z model    | Comb                                                                | No model (full histogram)                                                                                                                                               |  
