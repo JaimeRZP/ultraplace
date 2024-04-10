@@ -1,6 +1,8 @@
 # Ultraplace
 
+## Code Structure
 ![Ultraplace drawio](https://github.com/JaimeRZP/ultraplace/assets/39957598/35e41ed8-7c7f-42b2-a4ce-618a1f19bd1b)
+
 ## Goal
 The goal of this project is two fold:
 - On the one hand, we want to study the how different models for photometric uncertainty propagates to our theory predictions. 
