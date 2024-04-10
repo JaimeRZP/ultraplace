@@ -16,24 +16,24 @@ The uncertainties in the radial distribution of galaxies is naturally expressed 
 - Self-calibration and robust propagation of photometric redshift distribution uncertainties in weak gravitational lensing *by Stölzner et al* (2012.07707) - 2021
 - Analytical marginalisation over photometric redshift uncertainties in cosmic shear analyses *by Ruiz-Zapatero et al* (2301.11978) - 2023
 ## Photo-z Models
-* **Shifts**: $p(z + \Delta z)$
-* **Shifts & widths**: $p(z_c + w_{z}(z-z_c) + \Delta z)$
-* **Eigen-functions: $p(z) = \sum_i^n \lambda_i \phi_i(z)$
-* **Comb**:  $p(z) = \sum_i^{N_z} A_i \, \mathcal{N}(z; z_i, \sigma^2)$
-* **Full Histogram**: $p(z) = \boldsymbol{n}$
-* **Neuronal Network**: $p(z) = NN(\boldsymbol{\alpha})$ 
+* **Shifts**: $$p(z + \Delta z)$$
+* **Shifts & widths**: $$p(z_c + w_{z}(z-z_c) + \Delta z)$$
+* **Eigen-functions: $$p(z) = \sum_i^n \lambda_i \phi_i(z)$$
+* **Comb**:  $$p(z) = \sum_i^{N_z} A_i \, \mathcal{N}(z; z_i, \sigma^2)$$
+* **Full Histogram**: $$p(z) = \boldsymbol{n}$$
+* **Neuronal Network**: $$p(z) = NN(\boldsymbol{\alpha})$$ 
 
 ## Stölzner vs Ruiz-Zapatero
-|                  | Stölzner                                                            | Ruiz-Zapatero                                                                                                                                                           |     |
-| ---------------- | ------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --- |
-| Photo-z model    | Comb                                                                | No model (full histogram)                                                                                                                                               |     |
-| Marginalisation  | Laplace Approximation                                               | Laplace approximation and HMC                                                                                                                                           |     |
-| Assumptions      | Nuisance posteriors are somewhat Gaussian (base Laplace assumption) | Nuisance posteriors are somewhat Gaussian (base Laplace assumption)                                                                                                     |     |
-|                  |                                                                     | Gaussian Likelihood                                                                                                                                                     |     |
-|                  |                                                                     | Photo-z's are tightly constraint such that their impact of the theory can be linearized                                                                                 |     |
-|                  |                                                                     | Gaussian priors for the Photo-z's                                                                                                                                       |     |
-| Final expression | $P(\Omega \| d) = P(d \| \Omega, n^*) + \ln(Det(F_{n^*}))$          | $P(\Omega \| d) = (d - t^*)^T \tilde{C}^{-1} (d-t^*) - 2 \ln P(\Omega) + \ln(Det(T^T C^{-1}T+C_n^{-1}))$ where $\tilde{C} = C + TC_nT^T$ and $T= \partial t/\partial n$ |     |
-| Advantages       | More general                                                        | Best-fit nuisance parameters can be found analytically                                                                                                                  |     |
-|                  |                                                                     | Laplace term simplifies to $\ln(Det(C_n^{-1}))$                                                                                                                         |     |
-|                  |                                                                     | Profile term amounts to including an extra term in the covariance.                                                                                                      |     |
-|                  |                                                                     | Much faster                                                                                                                                                             |     |
+|                  | Stölzner                                                            | Ruiz-Zapatero                                                                                                                                                           |  
+| ---------------- | ------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------- | 
+| Photo-z model    | Comb                                                                | No model (full histogram)                                                                                                                                               |  
+| Marginalisation  | Laplace Approximation                                               | Laplace approximation and HMC                                                                                                                                           |   
+| Assumptions      | Nuisance posteriors are somewhat Gaussian (base Laplace assumption) | Nuisance posteriors are somewhat Gaussian (base Laplace assumption)                                                                                                     |   
+|                  |                                                                     | Gaussian Likelihood                                                                                                                                                     |  
+|                  |                                                                     | Photo-z's are tightly constraint such that their impact of the theory can be linearized                                                                                 |   
+|                  |                                                                     | Gaussian priors for the Photo-z's                                                                                                                                       |    
+| Final expression | $P(\Omega \| d) = P(d \| \Omega, n^*) + \ln(Det(F_{n^*}))$          | $P(\Omega \| d) = (d - t^*)^T \tilde{C}^{-1} (d-t^*) - 2 \ln P(\Omega) + \ln(Det(T^T C^{-1}T+C_n^{-1}))$ where $\tilde{C} = C + TC_nT^T$ and $T= \partial t/\partial n$ |    
+| Advantages       | More general                                                        | Best-fit nuisance parameters can be found analytically                                                                                                                  |   
+|                  |                                                                     | Laplace term simplifies to $\ln(Det(C_n^{-1}))$                                                                                                                         |    
+|                  |                                                                     | Profile term amounts to including an extra term in the covariance.                                                                                                      |    
+|                  |                                                                     | Much faster                                                                                                                                                             |    
