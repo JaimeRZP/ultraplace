@@ -2,7 +2,7 @@ import numpy as np
 
 
 def _TPT(J, P):
-    return np.dot(np.dot(J, P), np.transpose(P))
+    return np.dot(np.dot(np.transpose(J), P), J)
 
 
 def covmod(cov, bins):
