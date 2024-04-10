@@ -18,7 +18,7 @@ The uncertainties in the radial distribution of galaxies is naturally expressed 
 ## Photo-z Models
 * **Shifts**: $$p(z + \Delta z)$$
 * **Shifts & widths**: $$p(z_c + w_{z}(z-z_c) + \Delta z)$$
-* **Eigen-functions: $$p(z) = \sum_i^n \lambda_i \phi_i(z)$$
+* **Eigen-functions**: $$p(z) = \sum_i^n \lambda_i \phi_i(z)$$
 * **Comb**:  $$p(z) = \sum_i^{N_z} A_i \, \mathcal{N}(z; z_i, \sigma^2)$$
 * **Full Histogram**: $$p(z) = \boldsymbol{n}$$
 * **Neuronal Network**: $$p(z) = NN(\boldsymbol{\alpha})$$ 
